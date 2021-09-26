@@ -12,9 +12,11 @@ trees is 500, number of variables tried to split in each nodes is 5.
 
 4. Use best parameters to build best random forest model to get 4.4% error rate.  
 
-5. Plot with variables important can help us to select top 5 important variables.  
+5. Plot with variables important can help us to know top 5 variables seems more important than the others.  
+![3](https://user-images.githubusercontent.com/67025904/134789107-8aee9877-3018-4d95-b1a3-8b62f2c47d23.jpg)
 
 # Conclusion  
-In the project, I 
+Random Forest model can build a robust model because Random Forest, unlike BAGGING, are trees de-correlated and prune the trees. On the other hand, Bagging trees uses the entire feature so numbers of trees may be strongly correlated.  In this project, after tuning, I have the best model with 3 variables tried to split in each nodes and 559 trees. Moreover, I find 'concave points worst' is the most important feature in the model. And 'concave points mean', 'radius worst', 'perimeter_worst', and 'area worst' are also important than remain variables.  
+
 # Resource
 Kaggle-Random Forest in Python(https://www.kaggle.com/raviolli77/random-forest-in-python)
