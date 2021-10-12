@@ -23,7 +23,8 @@ trees is 500, number of variables tried to split in each nodes is 5.
 
 
 # Conclusion  
-In this data, Logistic Regression is better than Random Forest (error rate: 1.7% better than 4.4%). Random Forest model can build a robust model because Random Forest, unlike BAGGING, are trees <b>de-correlated and prune the trees</b>. On the other hand, BAGGING trees uses the entire feature so numbers of trees may be strongly correlated.  In this project, after tuning, I have the best model with 3 variables tried to split in each nodes and 559 trees. Moreover, I find 'concave points worst' is the most important feature in the model. And 'concave points mean', 'radius worst', 'perimeter_worst', and 'area worst' are also important than remain variables.  
+- In this data, Logistic Regression is better than Random Forest (error rate: 1.7% better than 4.4%). It is acceptable anwser beacuse usually we will choose logistic regression when we only have two labels on output variables. When we have more than two labels to classify, we would prefer to use decision tree/ LDA/ KNN or random forest.  
+- Random Forest model can build a robust model because Random Forest, unlike BAGGING, are trees <b>de-correlated and prune the trees</b>. On the other hand, BAGGING trees uses the entire feature so numbers of trees may be strongly correlated.  In this project, after tuning, I have the best model with 3 variables tried to split in each nodes and 559 trees. Moreover, I find 'concave points worst' is the most important feature in the model. And 'concave points mean', 'radius worst', 'perimeter_worst', and 'area worst' are also important than remain variables.  
 
 # Resource
 Kaggle-Random Forest in Python(https://www.kaggle.com/raviolli77/random-forest-in-python)
