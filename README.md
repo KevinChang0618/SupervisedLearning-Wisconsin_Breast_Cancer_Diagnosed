@@ -18,7 +18,7 @@ trees is 500, number of variables tried to split in each nodes is 5.
 - <b>Logistic Regression</b>
 1. At first, I use <b>STEPWISE</b> to select what kinds of variable I should use. After stepwise, I select 12 variables to run my model.  
 2. I fit my model with training data and test it. I get 0.6% error rate which is pretty low.  
-3. I use for-loop and set threshold 0 to 1 and check every thresholds error rate with training data. After tuning, I get threshold hold in 0.01 with lowest error rate 0.8%  
+3. I use for-loop and set threshold 0 to 1 and check every thresholds error rate with training data. After tuning, I get threshold hold in 0.01 with lowest trainning error rate 0.8%  
 4. Last, I use tuning threshold to fit testing data. I still get 0.6% error rate.
 
 
