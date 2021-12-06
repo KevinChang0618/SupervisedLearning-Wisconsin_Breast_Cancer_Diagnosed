@@ -8,7 +8,7 @@ trees is 500, number of variables tried to split in each nodes is 5.
 - Where 5 come from? There is a rule of thumb. Usually, model use square root on number of variables, 30 in here, to get number of variables tried to split in each nodes. (sqrt(30) ~= 5)  
 2. Later, I try <b>BAGGING</b> (use all number of variables tried to split in each nodes) on our model. I use 30 variables to split and build 100 trees. My testing error rate for new model is 7% which is worse than my original model.  
 
-3. Tune the model. I build random forest from 1 variables to split in each nodes to 11 variables. Moreover, in every variables selection, I use <b>lowest error rate</b> to get optimal trees. Last, I get the best model with 3 variables tried to split in each nodes and 559 trees.  
+3. Tune the model. I build random forest from 1 variables to split in each nodes to 30 variables. Moreover, in every variables selection, I use <b>lowest error rate</b> to get optimal trees. Last, I get the best model with 3 variables tried to split in each nodes and 559 trees.  
 
 4. Use best parameters to build best random forest model to get 4.4% error rate.  
 
